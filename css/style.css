@@ -1,0 +1,96 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 32px;
+    padding-right: 70px;
+}
+.button-menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width:20px;
+    height: 17px;
+    border: none;
+    padding: 0;
+    margin-right: 28px;
+    cursor: pointer;
+}
+.menu-line{
+    display: block;
+    background: #1F2022;
+    width: 20px;
+    height: 3px;
+    border-radius: 20px;
+}
+.logo{
+    margin-right: 50px;
+}
+.input-group{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #EBEBEB;
+    border-radius: 22px;
+    padding-right: 20px;
+    max-width: 830px;
+    width: 50%;
+   
+   
+}
+.input-search{
+    background-color: transparent;
+    border: none;
+    padding: 12px 23px;
+    
+}
+.button-search{
+    width: 19px;
+    height: 19px;
+    border: none;
+    border-color: transparent;
+    cursor: pointer;
+}
+.icon-search{
+    /* Заливка иконки-лупы*/
+ fill:#000; 
+
+}
+.icon-video{
+    /* Прозрачность иконки-видео */
+    opacity: 0.24;
+}
+.icon-menu{
+    opacity: 0.24;
+}
+.icon-notification{
+    opacity: 0.24;
+}
+.icons{
+    display: flex;
+    align-items: center;
+    /* Иконки перекинутся вправо к концу страницы */
+    margin-left: auto;
+}
+.icons-link{
+    text-decoration: none;
+}
+/* Все иконки класса icons-link, кроме последней, имеют отступ справа */
+.icons-link:not(:last-child){
+    margin-right: 50px;
+}
+.user{
+    margin-left: 45px;
+}
+.user-avatar{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
