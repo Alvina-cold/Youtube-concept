@@ -2,7 +2,11 @@
     box-sizing: border-box;
 }
 body{
-    font-family: Arial, Helvetica, sans-serif;
+    /* копируем из гугл-фонтс */
+    font-family: 'Mulish', sans-serif;
+    /* из фигмы */
+    font-size: 16px;
+    font-weight: 400;
 }
 header{
     display: flex;
@@ -11,6 +15,7 @@ header{
     padding-bottom: 20px;
     padding-left: 32px;
     padding-right: 70px;
+    margin-bottom: 30px;
 }
 .button-menu{
     display: flex;
@@ -46,6 +51,8 @@ header{
    
 }
 .input-search{
+    /* Чтобы строка поиска занимала всю ширину */
+    width: 100%;
     background-color: transparent;
     border: none;
     padding: 12px 23px;
@@ -93,4 +100,61 @@ header{
     width: 40px;
     height: 40px;
     border-radius: 50%;
+}
+
+
+/* СПИСОК СЛЕВА */
+.sidebar{
+    padding-left: 32px;
+}
+/* Первое меню-список имеет отступ 60пх от второго вниз, сверху обнуляем */
+.nav-menu{
+    margin-top: 0;
+    margin-bottom: 60px;
+    /* Обнуляем отступ слева */
+    padding-left: 0;
+    list-style: none;
+}
+/* у каждого пункта меню отступ снизу 28пх по макету  */
+.nav-item{
+    margin-bottom: 28px;
+   
+}
+.nav-item .icon{
+    /* Делаем заливку иконок */
+    fill:#898989;
+}
+.nav-link{
+    color: #898989;
+    text-decoration: none;
+    display: flex;
+    /* Чтобы иконки относительно текста были по центру */
+    align-items: center;
+
+}
+.nav-link:hover{
+    color:#FF0000;
+}
+/* меняем заливку и саиой иконки при наведении на нее курсора */
+.nav-link:hover .icon{
+    fill:#FF0000;
+}
+/* Отодвигаем текст от иконок */
+.nav-text{
+    margin-left: 13px;
+    
+}
+
+/* Подписчики */
+.nav-image{
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+}
+/* Из фигмы копируем св-ва заголовка subscriptionns */
+.nav-title{
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 23px;
+    margin-bottom: 30px;
 }
